@@ -25,9 +25,7 @@ class Alert extends StatelessWidget {
           );
         },
       );
-    }
-
-    ;
+    };
 
     showAlertDialogWithIcon() {
       showDialog(
@@ -231,6 +229,7 @@ class Alert extends StatelessWidget {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
+            spacing: 10.0,
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
