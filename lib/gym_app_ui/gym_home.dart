@@ -17,11 +17,13 @@ class GymHome extends StatefulWidget {
 }
 
 class _GymHomeState extends State<GymHome> {
+  //this code is for targeting app Drawer open with other buttons.................button open app drawer..//
   final GlobalKey<ScaffoldState> _myDrawerOpen = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //key for open app drawer....................app drawer key..//
       key: _myDrawerOpen,
       drawer: Drawer(
         backgroundColor: Colors.black ,
@@ -315,6 +317,7 @@ class _GymHomeState extends State<GymHome> {
                       ),
                       onPressed: () {
                         // Navigator.pop(context);
+                        //on click methode called to open app drawer with button............click open drawer...//
                         _myDrawerOpen.currentState!.openDrawer();
                       },
                       icon: Icon(
