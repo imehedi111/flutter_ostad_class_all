@@ -417,18 +417,18 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          z.stateNotifier?.addListener(() {
-            print("========> State: ${z.stateNotifier?.value}");
-          });
-          controller.fling(velocity: isPanelVisible ? -1.0 : 1.0);
-        },
-        child: AnimatedIcon(
-          icon: AnimatedIcons.close_menu,
-          progress: controller.view,
-        ),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     z.stateNotifier?.addListener(() {
+      //       print("========> State: ${z.stateNotifier?.value}");
+      //     });
+      //     controller.fling(velocity: isPanelVisible ? -1.0 : 1.0);
+      //   },
+      //   child: AnimatedIcon(
+      //     icon: AnimatedIcons.close_menu,
+      //     progress: controller.view,
+      //   ),
+      // ),
       body: TwoPanels(
         controller: controller,
       ),

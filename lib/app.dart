@@ -19,6 +19,7 @@ import 'package:myapp4/module_14/class_3_todo_app.dart';
 import 'package:myapp4/module_14/expanded_class_1.dart';
 import 'package:myapp4/module_14/screenutil_package_use.dart';
 import 'package:myapp4/module_15/fav_btn_class_1.dart';
+import 'package:myapp4/module_15/splash_screen_class_2.dart';
 import 'package:myapp4/module_15/stless_stfull_class_1.dart';
 import 'package:myapp4/my_app_one/login_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,6 +27,7 @@ import 'package:myapp4/my_app_one/my_bottom_nav.dart';
 import 'package:myapp4/my_app_one/zoom_drawer.dart';
 
 import 'assaignment_ui/home_page.dart';
+import 'module_15/stful_lifecicle_class_2.dart';
 import 'my_app_one/shop_ui_practice_1.dart';
 
 class MyApp extends StatelessWidget {
@@ -108,7 +110,7 @@ class MyApp extends StatelessWidget {
           // darkTheme: ThemeData(),
           debugShowCheckedModeBanner: false,
           title: 'My App Design',
-          home: Zoom(),
+          home: SplashScreenClass2(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home'   : (context) => UserLoginMyApp(),
