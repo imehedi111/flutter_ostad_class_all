@@ -18,6 +18,7 @@ import 'package:myapp4/module_14/class_1_responsive.dart';
 import 'package:myapp4/module_14/class_3_todo_app.dart';
 import 'package:myapp4/module_14/expanded_class_1.dart';
 import 'package:myapp4/module_14/screenutil_package_use.dart';
+import 'package:myapp4/module_15/calculator_class_3.dart';
 import 'package:myapp4/module_15/fav_btn_class_1.dart';
 import 'package:myapp4/module_15/splash_screen_class_2.dart';
 import 'package:myapp4/module_15/stless_stfull_class_1.dart';
@@ -110,7 +111,7 @@ class MyApp extends StatelessWidget {
           // darkTheme: ThemeData(),
           debugShowCheckedModeBanner: false,
           title: 'My App Design',
-          home: SplashScreenClass2(),
+          home: CalculatorClass3(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home'   : (context) => UserLoginMyApp(),
