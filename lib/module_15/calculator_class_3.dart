@@ -47,8 +47,14 @@ class _CalculatorClass3State extends State<CalculatorClass3> {
         _ope = value;
         num1 = double.parse(_input);
         _input = '';
-      } else if (_input.isNotEmpty && value == '←') {
-        _input = _input.substring(0, _input.length - 1);
+      } else if (value == '←') {
+        if (_input.isNotEmpty && _input != '0') {
+          _input = _input.substring(0, _input.length - 1);
+
+          if (_input.isEmpty) {
+            _input = '0';
+          }
+        }
       } else {
         if (_input == '0') {
           _input = value;
