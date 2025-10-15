@@ -42,18 +42,20 @@ class _CalculatorClass3State extends State<CalculatorClass3> {
           _output = num2 != 0
               ? (num1 % num2).toString()
               : 'Can not Devide by zero';
-        } else if (['+', '-', '*', '÷', '%'].contains(value)) {
-          num1 = double.parse(_input);
-          _ope = value;
-          _input = '';
         }
+      } else if (['+', '-', '*', '÷', '%'].contains(value)) {
+        _ope = value;
+        num1 = double.parse(_input);
+        _input = '';
+      } else if (_input.isNotEmpty && value == '←') {
+        _input = _input.substring(0, _input.length - 1);
       } else {
         if (_input == '0') {
           _input = value;
         } else {
           _input += value;
         }
-        _output = _input;
+        _output == _input;
       }
     });
   }
@@ -75,14 +77,16 @@ class _CalculatorClass3State extends State<CalculatorClass3> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    (_ope.isNotEmpty && _input.isNotEmpty) ? Text(
-                      '$num1 $_ope $_input',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 18,
-                        color: Colors.white,
-                      ),
-                    ) : SizedBox(),
+                    (_ope.isNotEmpty || _input.isNotEmpty)
+                        ? Text(
+                            '$num1 $_ope $_input',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          )
+                        : SizedBox(),
                     SizedBox(height: 10),
                     Text(
                       _output,
