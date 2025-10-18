@@ -22,6 +22,10 @@ import 'package:myapp4/module_15/calculator_class_3.dart';
 import 'package:myapp4/module_15/fav_btn_class_1.dart';
 import 'package:myapp4/module_15/splash_screen_class_2.dart';
 import 'package:myapp4/module_15/stless_stfull_class_1.dart';
+import 'package:myapp4/module_16/api_class_1.dart';
+import 'package:myapp4/module_16/photo_gallery/albums.dart';
+import 'package:myapp4/module_16/photo_gallery/photos.dart';
+import 'package:myapp4/module_16/photo_gallery/single_photo.dart';
 import 'package:myapp4/my_app_one/login_page.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:myapp4/my_app_one/my_bottom_nav.dart';
@@ -29,6 +33,7 @@ import 'package:myapp4/my_app_one/zoom_drawer.dart';
 
 import 'assaignment_ui/home_page.dart';
 import 'module_15/stful_lifecicle_class_2.dart';
+import 'my_app_one/clip_path/clip_path.dart';
 import 'my_app_one/shop_ui_practice_1.dart';
 
 class MyApp extends StatelessWidget {
@@ -111,7 +116,7 @@ class MyApp extends StatelessWidget {
           // darkTheme: ThemeData(),
           debugShowCheckedModeBanner: false,
           title: 'My App Design',
-          home: CalculatorClass3(),
+          home: Albums(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home'   : (context) => UserLoginMyApp(),
